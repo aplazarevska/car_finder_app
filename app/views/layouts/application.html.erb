@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MarketplacePractice</title>
+    <title>CarFinder</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,8 +10,11 @@
   </head>
 
   <body>
-    <%= render 'partials/navbar' %>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <%= render 'partials/navbar'%>
+    <div class="container">
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </div>
   </body>
 </html>
+
